@@ -1,0 +1,22 @@
+# vector-engines-bench
+Copyright 2026 tensorhan
+
+This product compares third-party vector search engines. None of that
+software is bundled, modified, or redistributed here; it is installed at
+runtime at the versions given in requirements.txt and remains under its own
+license:
+
+  TurboVec      turbovec[langchain,llama-index]
+  FAISS         faiss-cpu
+  hnswlib       hnswlib
+  LangChain     langchain-core
+  LlamaIndex    llama-index-core
+  NumPy         numpy
+
+The benchmark downloads the BEIR `scidocs` dataset and embeds it locally with
+the `qwen3-embedding:0.6b` model via Ollama. Neither the corpus nor the
+resulting vectors are redistributed here; individual BEIR datasets carry
+their own terms.
+
+Reported results in result-n25000-d1024-k1000.txt are factual measurements of
+the above software and imply no endorsement by its authors.

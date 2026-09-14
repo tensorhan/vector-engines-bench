@@ -1,0 +1,8 @@
+# Dependencies for benchmarkHarness
+numpy>=1.24.0
+
+turbovec[langchain,llama-index]>=1.0.0
+
+# Optional baselines: the harness reports a skipped row if one of these is absent
+faiss-cpu>=1.8.0
+hnswlib>=0.8.0
